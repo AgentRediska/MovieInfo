@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--other size -->
     <dimen name="logo_size">220dp</dimen>
-    <dimen name="margin_top_big">16dp</dimen>
-    <dimen name="margin_top_small">8dp</dimen>
-    <dimen name="margin_bottom_big">16dp</dimen>
-    <dimen name="margin_bottom_small">8dp</dimen>
+    <dimen name="full_size">0dp</dimen>
+    <dimen name="film_image_height">140dp</dimen>
+    <dimen name="film_image_width">240dp</dimen>
+    <!-- margin -->
+    <dimen name="margin_big">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <!--text -->
     <dimen name="text_app_name_size">34sp</dimen>
+    <dimen name="text_middle_size">16sp</dimen>
+    <dimen name="text_default_size">14sp</dimen>
+    <!--padding -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_big">16dp</dimen>
 </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/holder_background_style"
+    android:paddingTop="@dimen/padding_small"
+    android:paddingStart="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_small"
+    android:paddingBottom="@dimen/padding_big">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageFilm"
+        android:layout_width="@dimen/film_image_width"
+        android:layout_height="@dimen/film_image_height"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/full_size"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="4dp"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_middle_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilm" />
+
+    <TextView
+        android:layout_width="@dimen/full_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="top"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

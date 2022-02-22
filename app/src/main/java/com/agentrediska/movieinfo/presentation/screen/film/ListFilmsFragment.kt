@@ -8,5 +8,5 @@ import com.agentrediska.movieinfo.presentation.common.BaseFragment
 
 class ListFilmsFragment: BaseFragment<FragmentListFilmsBinding>() {
     override val inflate: (LayoutInflater, ViewGroup?, Boolean) -> FragmentListFilmsBinding = FragmentListFilmsBinding::inflate
-    private val viewModel: ListFilmViewModel by viewModels()
+    private val viewModel: ListFilmsViewModel by viewModels()
 }

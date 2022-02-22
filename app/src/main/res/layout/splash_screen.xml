@@ -16,7 +16,7 @@
         android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_top_big"
+        android:layout_marginTop="@dimen/margin_big"
         android:text="@string/app_name"
         android:textColor="@color/black"
         android:textSize="@dimen/text_app_name_size"/>
