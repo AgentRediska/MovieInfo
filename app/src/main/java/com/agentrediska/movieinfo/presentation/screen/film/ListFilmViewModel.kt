@@ -1,4 +1,6 @@
 package com.agentrediska.movieinfo.presentation.screen.film
 
-class ListFilmViewModel {
+import androidx.lifecycle.ViewModel
+
+class ListFilmViewModel: ViewModel() {
 }
