@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_Studio/MovieInfo/app/src/main/res/drawable/holder_background_style.xml" value="0.1703125" />
         <entry key="..\:/Android_Studio/MovieInfo/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android_Studio/MovieInfo/app/src/main/res/layout/film_holder.xml" value="0.1" />
+        <entry key="..\:/Android_Studio/MovieInfo/app/src/main/res/layout/fragment_list_films.xml" value="0.1" />
+        <entry key="..\:/Android_Studio/MovieInfo/app/src/main/res/layout/holder_background_style.xml" value="0.1" />
+        <entry key="..\:/Android_Studio/MovieInfo/app/src/main/res/layout/splash_screen.xml" value="0.1" />
       </map>
     </option>
   </component>
