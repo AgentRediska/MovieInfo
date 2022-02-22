@@ -1,4 +1,6 @@
 package com.agentrediska.movieinfo
 
-class App {
+import android.app.Application
+
+class App : Application() {
 }
