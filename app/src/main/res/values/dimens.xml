@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_size">220dp</dimen>
+    <dimen name="margin_top_big">16dp</dimen>
+    <dimen name="margin_top_small">8dp</dimen>
+    <dimen name="margin_bottom_big">16dp</dimen>
+    <dimen name="margin_bottom_small">8dp</dimen>
+    <dimen name="text_app_name_size">34sp</dimen>
+</resources>
