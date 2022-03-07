@@ -10,5 +10,5 @@ interface FilmApi {
 
     @GET("./reviews/all.json?api-key=pGjIhbOT4ZTKMGYC3XozImtMgawHi7FJ")
     @Headers("Content-Type: application/json")
-    fun getFilmList( @Query("offset") size: Int) : Call<FilmList>
+   suspend fun getFilmList( @Query("offset") size: Int) : FilmList
 }

@@ -10,9 +10,11 @@ class ListFilmHolder(item: View) : RecyclerView.ViewHolder(item) {
 
     private val binding = FilmHolderBinding.bind(item)
 
-    fun bind(film: Film) {
-        binding.textSummaryShort.text = film.summaryShort
-        binding.textNameFilm.text = film.title
-        Glide.with(binding.imageFilm).load(film.filmMultimedia.src).into(binding.imageFilm)
+    fun bind(film: Film?) {
+        film?.let {
+            binding.textSummaryShort.text = it.summaryShort
+            binding.textNameFilm.text = it.title
+            Glide.with(binding.imageFilm).load(it.filmMultimedia.src).into(binding.imageFilm)
+        }
     }
 }

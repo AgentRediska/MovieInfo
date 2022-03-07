@@ -2,11 +2,12 @@ package com.agentrediska.movieinfo.presentation.screen.film.list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
+import androidx.paging.PagingDataAdapter
+import androidx.recyclerview.widget.DiffUtil
 import com.agentrediska.movieinfo.R
 import com.agentrediska.movieinfo.data.model.Film
 
-class ListFilmsAdapter(private val list: List<Film>) : RecyclerView.Adapter<ListFilmHolder>() {
+class ListFilmsAdapter : PagingDataAdapter<Film,ListFilmHolder>(FilmDiffItemCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListFilmHolder {
         val view = LayoutInflater.from( parent.context)
@@ -15,8 +16,17 @@ class ListFilmsAdapter(private val list: List<Film>) : RecyclerView.Adapter<List
     }
 
     override fun onBindViewHolder(holder: ListFilmHolder, position: Int) {
-        holder.bind(list[position])
+        holder.bind(film = getItem(position))
     }
 
-    override fun getItemCount(): Int = list.size
+    private object FilmDiffItemCallback : DiffUtil.ItemCallback<Film>() {
+
+        override fun areItemsTheSame(oldItem: Film, newItem: Film): Boolean {
+            return oldItem.title == newItem.title
+        }
+
+        override fun areContentsTheSame(oldItem: Film, newItem: Film): Boolean {
+            return oldItem == newItem
+        }
+    }
 }
