@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--other size -->
-    <dimen name="logo_size">220dp</dimen>
+    <dimen name="logo_size">300dp</dimen>
     <dimen name="full_size">0dp</dimen>
     <dimen name="film_image_height">140dp</dimen>
     <dimen name="film_image_width">240dp</dimen>
