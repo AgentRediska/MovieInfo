@@ -1,7 +1,6 @@
 package com.agentrediska.movieinfo.data.storage.retrofit
 
 import com.agentrediska.movieinfo.data.model.FilmList
-import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Query

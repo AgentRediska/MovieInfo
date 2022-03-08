@@ -3,13 +3,7 @@ package com.agentrediska.movieinfo.data.storage.retrofit
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.agentrediska.movieinfo.data.model.Film
-import com.agentrediska.movieinfo.data.model.FilmList
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
-import retrofit2.Call
-import retrofit2.Callback
 import retrofit2.HttpException
-import retrofit2.Response
 import java.io.IOException
 
 private const val STARTING_INDEX = 20

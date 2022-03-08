@@ -7,11 +7,12 @@ import androidx.recyclerview.widget.DiffUtil
 import com.agentrediska.movieinfo.R
 import com.agentrediska.movieinfo.data.model.Film
 
-class ListFilmsAdapter : PagingDataAdapter<Film,ListFilmHolder>(FilmDiffItemCallback) {
+class ListFilmsAdapter( val hideSplashScreen: () -> Unit) : PagingDataAdapter<Film,ListFilmHolder>(FilmDiffItemCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListFilmHolder {
         val view = LayoutInflater.from( parent.context)
             .inflate(R.layout.film_holder, parent, false)
+        hideSplashScreen()
         return ListFilmHolder(view)
     }
 
